@@ -1,4 +1,11 @@
-typescript설치
+**_ 초기 설정 _**
+cmd 창에서 폴더 만들기
+mkdir typechain
+
+cmd 창에서 VSC 프로젝트 열기
+code typechain
+
+typescript 설치
 npm i -D typescript
 
 package.json 초기화
@@ -16,3 +23,12 @@ ex) 화살표 함수() => this는 ES5 이하이면 함수 표현식으로 바뀝
 https://www.typescriptlang.org/tsconfig#target
 
 "build": "tsc" 또는 "npx tsc"
+
+lib
+타입스크립트에게 어떤 API를 사용하고 어떤 환경에서 코드를 실행하는 지를 지정할 수 있습니다.
+(target 런타임 환경이 무엇인지를 지정합니다.)
+프로그램이 브라우저에서 실행되면 lib에 "DOM" 유형 정의를 할 수 있습니다.
+DOM: window, document 등
+ex) "lib": ["ES6","DOM"]
+
+https://www.typescriptlang.org/tsconfig#lib
