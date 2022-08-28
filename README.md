@@ -32,3 +32,5 @@ DOM: window, document 등
 ex) "lib": ["ES6","DOM"]
 
 https://www.typescriptlang.org/tsconfig#lib
+
+타입스크립트는 자바스크립트와는 다르게 strongly-typed 이기 때문에 타입스크립트에서 사용할 자바스크립트 라이브러리의 함수 모양을 설명해야하군요. 그리고 이 타입 정의를 서술한 파일이 Declaration File 이군요.
