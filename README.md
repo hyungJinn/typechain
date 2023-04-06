@@ -122,3 +122,5 @@ https://github.com/DefinitelyTyped/DefinitelyTyped
 
 @types/node
 npm i @types/node -D
+
+NestJS 공부해봐야 하는데.
