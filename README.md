@@ -99,14 +99,14 @@ https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html#param-an
 
 #### ts-node
 
-TypeScript execution and REPL for node.js, with source map and native ESM support.
+[npm i ts-node -D](https://www.npmjs.com/package/ts-node)
+Run TypeScript without having to build all the time.
 
-@ysjkof 'ts-node' 패키지를 설치할 때, crypto.d.ts가 자동으로 node_modules/@types/node 경로에 생성되기 때문인것 같아요. 따라서 ts-node를 설치하지 않고 import crypto from 'crypto'를 작성하게 되면 이때는 타입정의파일이 없기 때문에 영상에서 니코가 보여준 것과 같은 에러가 발생합니다.
+TypeScript execution and REPL for node.js, with source map and native ESM support.
 
 ts-node는 Node.js용 TypeScript 실행 엔진 및 REPL입니다. JIT는 TypeScript를 JavaScript로 변환하므로 사전 컴파일 없이 Node.js에서 TypeScript를 직접 실행할 수 있습니다.
 
-[npm i ts-node -D](https://www.npmjs.com/package/ts-node)
-Run TypeScript without having to build all the time.
+'ts-node' 패키지를 설치할 때, crypto.d.ts가 자동으로 node_modules/@types/node 경로에 생성되기 때문인것 같아요. 따라서 ts-node를 설치하지 않고 import crypto from 'crypto'를 작성하게 되면 이때는 타입정의파일이 없기 때문에 에러가 발생합니다.
 
 [npm i nodemon -D](https://www.npmjs.com/package/nodemon)
 
@@ -115,3 +115,10 @@ CommonJS 모듈을 ES6 모듈 코드베이스로 가져오려고 할 때 발생
 
 블록체인 시리즈
 https://www.youtube.com/playlist?list=PL7jH19IHhOLOJfXeVqjtiawzNQLxOgTdq
+
+DefinitelyTyped
+A repository to define TypeScript's type
+https://github.com/DefinitelyTyped/DefinitelyTyped
+
+@types/node
+npm i @types/node -D
