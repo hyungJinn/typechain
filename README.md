@@ -18,9 +18,17 @@ npm init -y
 
 ---
 
-tsconfig.json설정
+### tsconfig.json
+
+A TSConfig file in a directory indicates that the directory is the root of a TypeScript or JavaScript project.
+
 디렉터리에 tsconfig.json 파일이 있으면 해당 디렉터리가 TypeScript 프로젝트의 루트임을 나타냅니다. tsconfig.json 파일은 프로젝트를 컴파일하는 데 필요한 루트 파일과 컴파일러 옵션을 지정합니다.
 https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#handbook-content
+
+#### Root Fields
+
+Starting up are the root options in the TSConfig
+These options relate to how your TypeScript or JavaScript project is set up.
 
 Target (기본값: ES3)
 최신 브라우저는 모든 ES6 기능을 지원하므로 ES6는 좋은 선택입니다. 코드가 이전 환경에 배포된 경우 더 낮은 target을 설정하거나 최신 환경에서 코드 실행이 보장되는 경우 더 높은 target을 설정하도록 선택할 수 있습니다.
@@ -56,3 +64,9 @@ https://www.typescriptlang.org/tsconfig#strict
 ### JavaScript vs TypeScript
 
 ### What is the best part in TypeSCript Language more than other Launguage.
+
+### d.ts vs JSDoc
+
+in d.ts, we can use more JS features, maybe polymorpishm and generics.
+
+We don't have to modify our actual JavaScript code.

@@ -1,9 +1,16 @@
+// A TSConfig file in a directory indicates that the directory is the root of a TypeScript or JavaScript project.
+
 {
   "include": ["src"],
+  // This means typescript is now watcing all files on src folder.
   "compilerOptions": {
     "outDir": "build",
     "target": "ES6",
     "lib": ["ES6", "DOM"],
-    "strict": true
+    // Where your javascipt code is going to be unning.
+    // "DOM" is for browser
+    // What enviornment is that? What javascript version is that?
+    "strict": true,
+    "allowJs": true
   }
 }
