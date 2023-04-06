@@ -6,11 +6,12 @@
   "compilerOptions": {
     "outDir": "build",
     "target": "ES6",
-    "lib": ["ES6", "DOM"],
+    "lib": ["ES6"],
     // Where your javascipt code is going to be unning.
     // "DOM" is for browser
     // What enviornment is that? What javascript version is that?
     "strict": true,
-    "allowJs": true
+    "esModuleInterop": true,
+    "module": "CommonJS"
   }
 }

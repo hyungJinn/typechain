@@ -1,29 +1,29 @@
 **_ Default Setting _**
 
-### make a folder on cmd
+```
+make a folder on cmd
+>mkdir typechain
 
-mkdir typechain
+open vsc's project on cmd
+>code typechain
 
-### open vsc's project on cmd
+install typescript
+>npm i -D typescript
 
-code typechain
+initialize package.json
+>npm init -y
 
-### install typescript
-
-npm i -D typescript
-
-### initialize package.json
-
-npm init -y
+```
 
 ---
 
 ### tsconfig.json
 
-A TSConfig file in a directory indicates that the directory is the root of a TypeScript or JavaScript project.
+A TSConfig file in a directory indicates that the directory is the root of a TypeScript or JavaScript project. When compiling, A TSConfig file designate the root file and the compile option that we need.
 
 디렉터리에 tsconfig.json 파일이 있으면 해당 디렉터리가 TypeScript 프로젝트의 루트임을 나타냅니다. tsconfig.json 파일은 프로젝트를 컴파일하는 데 필요한 루트 파일과 컴파일러 옵션을 지정합니다.
-https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#handbook-content
+
+[What is a tsconfig.json?](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#handbook-content)
 
 #### Root Fields
 
@@ -70,3 +70,48 @@ https://www.typescriptlang.org/tsconfig#strict
 in d.ts, we can use more JS features, maybe polymorpishm and generics.
 
 We don't have to modify our actual JavaScript code.
+
+@ts-check
+JavaScript 파일에서 오류를 활성화하려면 // @ts-check를 .js 파일의 첫 번째 줄에 추가하여 TypeScript가 오류를 발생시키도록 합니다. TypeScript는 여러 오류를 제공할 수 있습니다.
+이러한 오류를 무시하고 싶다면 // @ts-ignore 또는 // @ts-expect-error를 추가하여 특정 줄의 오류를 무시할 수 있습니다.
+https://www.typescriptlang.org/docs/handbook/intro-to-js-ts.html#ts-check
+
+JSDoc Reference
+JSDoc 주석을 사용하여 JavaScript 파일에 type 정보를 제공할 수 있습니다. (자바스크립트 파일에서 타입 정보를 제공할 수 있습니다.)
+https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html
+
+@param, @returns
+
+```
+/**
+* @param {string} p1 - A string param.
+* @param {string=} p2 - An optional param (Google Closure syntax)
+* @param {string} [p3] - Another optional param (JSDoc syntax).
+* @param {string} [p4="test"] - An optional param with a default value
+* @returns {string} This is the result
+*/
+function stringsStringStrings(p1, p2, p3, p4) {
+// 코드...
+}
+```
+
+https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html#param-and-returns
+
+#### ts-node
+
+TypeScript execution and REPL for node.js, with source map and native ESM support.
+
+@ysjkof 'ts-node' 패키지를 설치할 때, crypto.d.ts가 자동으로 node_modules/@types/node 경로에 생성되기 때문인것 같아요. 따라서 ts-node를 설치하지 않고 import crypto from 'crypto'를 작성하게 되면 이때는 타입정의파일이 없기 때문에 영상에서 니코가 보여준 것과 같은 에러가 발생합니다.
+
+ts-node는 Node.js용 TypeScript 실행 엔진 및 REPL입니다. JIT는 TypeScript를 JavaScript로 변환하므로 사전 컴파일 없이 Node.js에서 TypeScript를 직접 실행할 수 있습니다.
+
+[npm i ts-node -D](https://www.npmjs.com/package/ts-node)
+Run TypeScript without having to build all the time.
+
+[npm i nodemon -D](https://www.npmjs.com/package/nodemon)
+
+[esModuleInterop](https://www.typescriptlang.org/tsconfig/#esModuleInterop)
+CommonJS 모듈을 ES6 모듈 코드베이스로 가져오려고 할 때 발생하는 문제를 해결합니다. ES6 모듈 사양을 준수하여 CommonJS 모듈을 정상적으로 가져올 수 있게 해줍니다.
+
+블록체인 시리즈
+https://www.youtube.com/playlist?list=PL7jH19IHhOLOJfXeVqjtiawzNQLxOgTdq
