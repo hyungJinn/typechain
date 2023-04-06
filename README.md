@@ -1,15 +1,22 @@
-**_ 초기 설정 _**
-cmd 창에서 폴더 만들기
+**_ Default Setting _**
+
+### make a folder on cmd
+
 mkdir typechain
 
-cmd 창에서 VSC 프로젝트 열기
+### open vsc's project on cmd
+
 code typechain
 
-typescript 설치
+### install typescript
+
 npm i -D typescript
 
-package.json 초기화
+### initialize package.json
+
 npm init -y
+
+---
 
 tsconfig.json설정
 디렉터리에 tsconfig.json 파일이 있으면 해당 디렉터리가 TypeScript 프로젝트의 루트임을 나타냅니다. tsconfig.json 파일은 프로젝트를 컴파일하는 데 필요한 루트 파일과 컴파일러 옵션을 지정합니다.
@@ -34,3 +41,18 @@ ex) "lib": ["ES6","DOM"]
 https://www.typescriptlang.org/tsconfig#lib
 
 타입스크립트는 자바스크립트와는 다르게 strongly-typed 이기 때문에 타입스크립트에서 사용할 자바스크립트 라이브러리의 함수 모양을 설명해야하군요. 그리고 이 타입 정의를 서술한 파일이 Declaration File 이군요.
+
+https://github.com/microsoft/TypeScript/tree/main/lib : 여기에 정의된 d.ts 파일 목록이 있네요. TS에서 사전에 DOM 이나 ES 관련된 내용을 정의해두고 이를 필요한 것만 끌어다 쓰는 방식이라고 이해해도 될까요?
+
+Typescript는 처음부터 DOM API에 대한 정보를 가지고 있지 않기에, 이를 사용하기 위해 lib에서 유형을 정의해주는 것이군요.. 감사합니다.
+
+strict
+
+모든 엄격한 타입 검사 옵션을 활성화합니다.
+strict 플래그는 프로그램 정확성을 더 강력하게 보장하는 광범위한 타입 검사 동작을 가능하게 합니다.
+
+https://www.typescriptlang.org/tsconfig#strict
+
+### JavaScript vs TypeScript
+
+### What is the best part in TypeSCript Language more than other Launguage.

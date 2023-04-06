@@ -1,3 +1,7 @@
-import { init } from "myPackage";
+import { init, exit } from "myPackage";
 
-localStorage;
+init({
+  url: "true",
+});
+
+exit(1);
